@@ -2,9 +2,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.7;
     margin: 0;
-    padding: 0;
-    background-color: #f8f9fa; /* Un gris muy claro para el fondo general */
-    color: #343a40; /* Un gris oscuro para el texto principal */
+    padding: 0; /* Importante para que los bordes fijos se alineen correctamente */
+    background-color: #f8f9fa;
+    color: #343a40;
+    position: relative; /* Puede ser útil para otros posicionamientos, no crítico para los bordes fijos */
+    overflow-x: hidden; /* Previene barras de scroll horizontales si algo se desborda */
 }
 
 header {
@@ -23,9 +25,9 @@ header h1 {
 
 main {
     padding: 25px;
-    max-width: 1100px; /* Un ancho máximo para mejor legibilidad en pantallas grandes */
+    max-width: 1100px;
     margin: 30px auto;
-    background-color: #ffffff; /* Fondo blanco para el contenido principal */
+    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
@@ -33,9 +35,9 @@ main {
 .anime-section {
     margin-bottom: 50px;
     padding: 25px;
-    border: 1px solid #e9ecef; /* Un borde sutil */
+    border: 1px solid #e9ecef;
     border-radius: 8px;
-    background-color: #fff; /* Asegura que cada sección tenga fondo blanco si main tuviera otro color */
+    background-color: #fff;
 }
 
 .anime-section:last-child {
@@ -43,8 +45,7 @@ main {
 }
 
 .anime-section h2 {
-    /* Color temático para Mushoku Tensei */
-    color: #8c52ff; /* Un violeta más claro o diferente para Frieren si se desea */
+    color: #8c52ff;
     text-align: center;
     font-size: 2.2rem;
     margin-bottom: 25px;
@@ -53,9 +54,8 @@ main {
     font-weight: 500;
 }
 
-/* Color específico para el título de Frieren para diferenciarlos visualmente */
 #frieren h2 {
-    color: #007bff; /* Un azul para Frieren */
+    color: #007bff;
 }
 
 
@@ -63,12 +63,12 @@ main {
     margin-bottom: 30px;
     padding: 15px;
     background-color: #f8f9fa;
-    border-left: 4px solid #8c52ff; /* Usar el color del h2 correspondiente */
+    border-left: 4px solid #8c52ff;
     border-radius: 4px;
 }
 
 #frieren .anime-summary {
-    border-left-color: #007bff; /* Color del borde para Frieren */
+    border-left-color: #007bff;
 }
 
 .anime-summary h3 {
@@ -79,7 +79,7 @@ main {
 }
 
 .season-details h3 {
-    color: #495057; /* Un gris un poco más claro */
+    color: #495057;
     font-size: 1.8rem;
     margin-top: 30px;
     margin-bottom: 15px;
@@ -87,33 +87,33 @@ main {
     padding-bottom: 8px;
 }
 
-.season-details h4 { /* Título de Temporada */
+.season-details h4 {
     color: #495057;
     font-size: 1.5rem;
     margin-top: 25px;
     margin-bottom: 10px;
     padding-left: 10px;
-    border-left: 4px solid #6f42c1; /* Un violeta más oscuro para temporadas */
+    border-left: 4px solid #6f42c1;
 }
 
 #frieren .season-details h4 {
-    border-left-color: #0056b3; /* Un azul más oscuro para temporadas de Frieren */
+    border-left-color: #0056b3;
 }
 
-.season-details h5 { /* Título de Parte de Temporada */
+.season-details h5 {
     color: #5a6268;
     font-size: 1.3rem;
     margin-top: 20px;
     margin-bottom: 10px;
-    padding-left: 20px; /* Mayor indentación */
+    padding-left: 20px;
 }
 
 .episode {
     margin-bottom: 25px;
     padding: 20px;
-    background-color: #fdfdff; /* Un blanco ligeramente diferente para los episodios */
-    border: 1px solid #e0e0ff; /* Borde sutil para episodios */
-    border-left: 5px solid #adb5bd; /* Borde izquierdo para destacar */
+    background-color: #fdfdff;
+    border: 1px solid #e0e0ff;
+    border-left: 5px solid #adb5bd;
     border-radius: 6px;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
@@ -128,24 +128,23 @@ main {
 }
 
 .episode p strong {
-    color: #6f42c1; /* Violeta para los títulos de episodio en Mushoku */
+    color: #6f42c1;
     font-size: 1.1rem;
 }
 
 #frieren .episode p strong {
-    color: #0056b3; /* Azul para los títulos de episodio en Frieren */
+    color: #0056b3;
 }
 
 footer {
     text-align: center;
     padding: 25px;
-    background-color: #343a40; /* Footer oscuro */
-    color: #f8f9fa; /* Texto claro en el footer */
+    background-color: #343a40;
+    color: #f8f9fa;
     margin-top: 40px;
     font-size: 0.9rem;
 }
 
-/* Media Queries para Responsividad */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
@@ -185,3 +184,93 @@ footer {
         font-size: 1rem;
     }
 }
+
+/* --- Inicio: Animación de Borde Morado --- */
+/* Aseguramos que html no tenga overflow que interfiera con fixed elements */
+html {
+    overflow-x: hidden;
+}
+
+/* Barra Superior */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%; /* Inicia con ancho 0 */
+    height: 4px; /* Grosor del borde */
+    background-color: #800080; /* Morado */
+    z-index: 9999; /* Encima de todo el contenido */
+    animation: animateTopBorder 8s linear infinite;
+}
+
+/* Barra Derecha */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0; /* Inicia arriba */
+    right: 0;
+    width: 4px; /* Grosor del borde */
+    height: 0%; /* Inicia con altura 0 */
+    background-color: #800080; /* Morado */
+    z-index: 9999;
+    animation: animateRightBorder 8s linear infinite;
+    animation-delay: 2s; /* Comienza cuando la barra superior termina su expansión (25% de 8s) */
+}
+
+/* Barra Inferior - Usando pseudo-elemento de <html> */
+html::before {
+    content: '';
+    position: fixed;
+    bottom: 0;
+    right: 0; /* Inicia a la derecha */
+    width: 0%; /* Inicia con ancho 0 */
+    height: 4px; /* Grosor del borde */
+    background-color: #800080; /* Morado */
+    z-index: 9999;
+    animation: animateBottomBorder 8s linear infinite;
+    animation-delay: 4s; /* Comienza después de la derecha (50% de 8s) */
+}
+
+/* Barra Izquierda - Usando pseudo-elemento de <html> */
+html::after {
+    content: '';
+    position: fixed;
+    bottom: 0; /* Inicia abajo */
+    left: 0;
+    width: 4px; /* Grosor del borde */
+    height: 0%; /* Inicia con altura 0 */
+    background-color: #800080; /* Morado */
+    z-index: 9999;
+    animation: animateLeftBorder 8s linear infinite;
+    animation-delay: 6s; /* Comienza después de la inferior (75% de 8s) */
+}
+
+@keyframes animateTopBorder {
+    0% { width: 0%; left: 0%; }
+    25% { width: 100%; left: 0%; } /* Expansión completa */
+    25.01% { width: 100%; left: 0%; } /* Mantenimiento */
+    50%, 100% { width: 0%; left: 100%; } /* Desaparece por la derecha */
+}
+
+@keyframes animateRightBorder {
+    0% { height: 0%; top: 0%; }
+    25% { height: 100%; top: 0%; } /* Expansión completa */
+    25.01% { height: 100%; top: 0%; } /* Mantenimiento */
+    50%, 100% { height: 0%; top: 100%; } /* Desaparece por abajo */
+}
+
+@keyframes animateBottomBorder {
+    0% { width: 0%; right: 0%; }
+    25% { width: 100%; right: 0%; } /* Expansión completa (hacia la izquierda) */
+    25.01% { width: 100%; right: 0%; } /* Mantenimiento */
+    50%, 100% { width: 0%; right: 100%; } /* Desaparece por la izquierda */
+}
+
+@keyframes animateLeftBorder {
+    0% { height: 0%; bottom: 0%; }
+    25% { height: 100%; bottom: 0%; } /* Expansión completa (hacia arriba) */
+    25.01% { height: 100%; bottom: 0%; } /* Mantenimiento */
+    50%, 100% { height: 0%; bottom: 100%; } /* Desaparece por arriba */
+}
+/* --- Fin: Animación de Borde Morado --- */
