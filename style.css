@@ -1,0 +1,187 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Un gris muy claro para el fondo general */
+    color: #343a40; /* Un gris oscuro para el texto principal */
+}
+
+header {
+    background: linear-gradient(90deg, #4a00e0, #8e2de2); /* Un gradiente violeta */
+    color: #ffffff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: 300;
+}
+
+main {
+    padding: 25px;
+    max-width: 1100px; /* Un ancho máximo para mejor legibilidad en pantallas grandes */
+    margin: 30px auto;
+    background-color: #ffffff; /* Fondo blanco para el contenido principal */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.anime-section {
+    margin-bottom: 50px;
+    padding: 25px;
+    border: 1px solid #e9ecef; /* Un borde sutil */
+    border-radius: 8px;
+    background-color: #fff; /* Asegura que cada sección tenga fondo blanco si main tuviera otro color */
+}
+
+.anime-section:last-child {
+    margin-bottom: 0;
+}
+
+.anime-section h2 {
+    /* Color temático para Mushoku Tensei */
+    color: #8c52ff; /* Un violeta más claro o diferente para Frieren si se desea */
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid; /* El color se hereda */
+    font-weight: 500;
+}
+
+/* Color específico para el título de Frieren para diferenciarlos visualmente */
+#frieren h2 {
+    color: #007bff; /* Un azul para Frieren */
+}
+
+
+.anime-summary {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #8c52ff; /* Usar el color del h2 correspondiente */
+    border-radius: 4px;
+}
+
+#frieren .anime-summary {
+    border-left-color: #007bff; /* Color del borde para Frieren */
+}
+
+.anime-summary h3 {
+    color: #343a40;
+    font-size: 1.6rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.season-details h3 {
+    color: #495057; /* Un gris un poco más claro */
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 8px;
+}
+
+.season-details h4 { /* Título de Temporada */
+    color: #495057;
+    font-size: 1.5rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 4px solid #6f42c1; /* Un violeta más oscuro para temporadas */
+}
+
+#frieren .season-details h4 {
+    border-left-color: #0056b3; /* Un azul más oscuro para temporadas de Frieren */
+}
+
+.season-details h5 { /* Título de Parte de Temporada */
+    color: #5a6268;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 20px; /* Mayor indentación */
+}
+
+.episode {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #fdfdff; /* Un blanco ligeramente diferente para los episodios */
+    border: 1px solid #e0e0ff; /* Borde sutil para episodios */
+    border-left: 5px solid #adb5bd; /* Borde izquierdo para destacar */
+    border-radius: 6px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.episode:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+.episode p {
+    margin: 8px 0;
+}
+
+.episode p strong {
+    color: #6f42c1; /* Violeta para los títulos de episodio en Mushoku */
+    font-size: 1.1rem;
+}
+
+#frieren .episode p strong {
+    color: #0056b3; /* Azul para los títulos de episodio en Frieren */
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #343a40; /* Footer oscuro */
+    color: #f8f9fa; /* Texto claro en el footer */
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    .anime-section h2 {
+        font-size: 1.8rem;
+    }
+    .anime-summary h3, .season-details h3 {
+        font-size: 1.4rem;
+    }
+    .season-details h4 {
+        font-size: 1.2rem;
+    }
+    .season-details h5 {
+        font-size: 1.1rem;
+    }
+    main {
+        padding: 15px;
+        margin: 15px;
+    }
+    .anime-section {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+    .anime-section h2 {
+        font-size: 1.5rem;
+    }
+    .episode {
+        padding: 15px;
+    }
+    .episode p strong {
+        font-size: 1rem;
+    }
+}
