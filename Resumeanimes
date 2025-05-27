@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resúmenes de Anime: Mushoku Tensei & Frieren</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Resúmenes Detallados de Anime</h1>
+    </header>
+
+    <main>
+        <section id="mushoku-tensei" class="anime-section">
+            <h2>Mushoku Tensei: Jobless Reincarnation</h2>
+            <article class="anime-summary">
+                <h3>Resumen General de Mushoku Tensei</h3>
+                <p>
+                    Un NEET japonés de 34 años es desalojado de su casa tras la muerte de sus padres. Después de cierta introspección, intercepta un camión a toda velocidad que se dirigía hacia un grupo de adolescentes en un intento de hacer algo significativo por una vez en su vida y muere. Al despertar en el cuerpo de un bebé, se da cuenta de que ha reencarnado en un mundo de espada y brujería. Decide tener éxito en su nueva vida, descartando su identidad pasada por su nueva vida como Rudeus Greyrat. Debido a su afinidad heredada y su entrenamiento temprano, Rudeus se vuelve muy hábil en la magia. Durante su infancia, se convierte en alumno de la maga demonio Roxy Migurdia, amigo de la medio elfa Sylphiette y profesor de magia de la heredera Eris Boreas Greyrat. Rudeus intenta vivir su vida al máximo, pero una catástrofe mágica destruye su provincia y teletransporta a muchos de sus habitantes a diversos lugares del mundo, comenzando así su verdadera aventura.
+                </p>
+            </article>
+
+            <section class="season-details">
+                <h3>Temporadas y Episodios</h3>
+
+                <h4>Temporada 1</h4>
+                <h5>Parte 1 (2021)</h5>
+                <div class="episode">
+                    <p><strong>Episodio 1: Hombre Reencarnado (Mushoku Tensei)</strong></p>
+                    <p>[Descripción detallada del episodio 1 de la Temporada 1, Parte 1. Incluir puntos clave de la trama, desarrollo de personajes y eventos importantes.]</p>
+                </div>
+                <div class="episode">
+                    <p><strong>Episodio 2: Maestro (Sensei)</strong></p>
+                    <p>[Descripción detallada del episodio 2 de la Temporada 1, Parte 1. Incluir puntos clave de la trama, desarrollo de personajes y eventos importantes.]</p>
+                </div>
+                <div class="episode">
+                    <p><strong>Episodio 3: Amigos (Tomodachi)</strong></p>
+                    <p>[Descripción detallada del episodio 3 de la Temporada 1, Parte 1.]</p>
+                </div>
+                <div class="episode">
+                    <p><strong>Episodio 11: Niños y Guerreros (Kodomo to Senshi)</strong></p>
+                    <p>[Descripción detallada del episodio 11 de la Temporada 1, Parte 1.]</p>
+                </div>
+
+                <h5>Parte 2 (2021)</h5>
+                <div class="episode">
+                    <p><strong>Episodio 12: La Mujer con Ojos Demoníacos (Magan o Motsu Onna)</strong></p>
+                    <p>[Descripción detallada del episodio 12 (inicio T1P2). Incluir puntos clave de la trama, desarrollo de personajes y eventos importantes.]</p>
+                </div>
+                <div class="episode">
+                    <p><strong>Episodio 13: Encuentro Fortuito (Surechigai)</strong></p>
+                    <p>[Descripción detallada del episodio 13 de la Temporada 1, Parte 2.]</p>
+                </div>
+                <div class="episode">
+                    <p><strong>Episodio 23: Despertar, un Paso, y... (Mezame, Ippo, Soshite.)</strong></p>
+                    <p>[Descripción detallada del episodio 23 de la Temporada 1, Parte 2.]</p>
+                </div>
+
+                <h4>Temporada 2</h4>
+                <h5>Parte 1 (2023)</h5>
+                <div class="episode">
+                    <p><strong>Episodio 0: Guardián Fitz (Shugo Jutsushi Fitz)</strong></p>
+                    <p>[Descripción detallada del episodio 0 de la Temporada 2, Parte 1. Incluir puntos clave de la trama, desarrollo de personajes y eventos importantes.]</p>
+                </div>
+                <div class="episode">
+                    <p><strong>Episodio 1: El Mago Descorazonado (Shitsui no Majutsushi)</strong></p>
+                    <p>[Descripción detallada del episodio 1 de la Temporada 2, Parte 1.]</p>
+                </div>
+                <div class="episode">
+                    <p><strong>Episodio 12: Quiero Contarte (Tsutaetai)</strong></p>
+                    <p>[Descripción detallada del episodio 12 de la Temporada 2, Parte 1.]</p>
+                </div>
+
+                <h5>Parte 2 (2024)</h5>
+                <div class="episode">
+                    <p><strong>Episodio 13: Un Hogar en el Bosque (Yume no My Home)</strong></p>
+                    <p>[Descripción detallada del episodio 13 (inicio T2P2). Incluir puntos clave de la trama, desarrollo de personajes y eventos importantes.]</p>
+                </div>
+                 <div class="episode">
+                    <p><strong>Episodio 24: Heredar (Kōkeisha)</strong></p>
+                    <p>[Descripción detallada del episodio final de la Temporada 2, Parte 2.]</p>
+                </div>
+            </section>
+        </section>
+
+        <section id="frieren" class="anime-section">
+            <h2>Frieren: Beyond Journey's End (Sousou no Frieren)</h2>
+            <article class="anime-summary">
+                <h3>Resumen General de Frieren</h3>
+                <p>
+                    La historia sigue a la maga elfa Frieren, un antiguo miembro del grupo de aventureros que derrotó al Rey Demonio y restauró la armonía en el mundo después de una búsqueda de diez años. El grupo heroico incluía a Himmel el héroe humano, Heiter el sacerdote humano, Eisen el guerrero enano y Frieren. Antes de separarse, observan juntos la Era de los Meteoros, una lluvia de meteoritos que ocurre una vez cada cincuenta años. Frieren promete volver a verlos y ofrecerles una mejor vista la próxima vez. Luego, Frieren parte y viaja por el mundo en busca de conocimiento mágico. Cincuenta años después, Frieren regresa a la capital y descubre que la humanidad ha cambiado y sus antiguos compañeros han envejecido notablemente. Después de una última aventura para ver la lluvia de meteoritos, Himmel muere de vejez. Durante el funeral, Frieren se enfrenta a su efímera interacción con el héroe y se arrepiente de no haber intentado conocerlo mejor. Frieren luego visita a sus antiguos camaradas, Heiter y Eisen. Heiter le encarga cuidar a su joven aprendiz humana, Fern. Eisen también se niega a unirse a ella en un nuevo viaje, pero le sugiere que visite la morada de las almas en el extremo norte del continente para volver a ver a Himmel y expresar sus sentimientos. Frieren se embarca en un viaje con Fern mientras continúa persiguiendo su pasión por aprender magia, esta vez con un nuevo aprecio por sus relaciones pasadas y presentes.
+                </p>
+            </article>
+
+            <section class="season-details">
+                <h3>Temporadas y Episodios</h3>
+
+                <h4>Temporada 1 (2023-2024)</h4>
+                <div class="episode">
+                    <p><strong>Episodio 1: El Fin de la Aventura (Bouken no Owari)</strong></p>
+                    <p>[Descripción detallada del episodio 1 de la Temporada 1. Incluir los eventos principales, las reflexiones de Frieren y la introducción de personajes clave.]</p>
+                </div>
+                <div class="episode">
+                    <p><strong>Episodio 2: No Tenía por Qué Ser Magia (Betsuni Mahou Janakutatte...)</strong></p>
+                    <p>[Descripción detallada del episodio 2 de la Temporada 1. Detallar las interacciones de Frieren y el inicio de su nuevo viaje.]</p>
+                </div>
+                <div class="episode">
+                    <p><strong>Episodio 3: Magia Asesina (Hito o Korosu Mahou)</strong></p>
+                    <p>[Descripción detallada del episodio 3 de la Temporada 1.]</p>
+                </div>
+                <div class="episode">
+                    <p><strong>Episodio 28: Sería Vergonzoso Para Mí (Mata Aeru Toki ga Kitara Hazukashii Kara ne)</strong></p>
+                    <p>[Descripción detallada del episodio 28 de la Temporada 1. Resumir el cierre de la temporada y los desarrollos de Frieren y sus compañeros.]</p>
+                </div>
+                </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tu Página de Resúmenes de Anime. Creado con dedicación.</p>
+    </footer>
+</body>
+</html>
